@@ -1,0 +1,157 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 22, 2022, 2:04:55 AM
+    Author     : rozanasendi
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-image: url('bbbb.jpg');
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 450px;
+  display: flex;
+  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+}
+
+.wrapper .left{
+  width: 35%;
+  background: linear-gradient(to left, #cfae9f, #836e62);
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper .left img{
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.wrapper .left h4{
+  margin-bottom: 10px;
+}
+
+.wrapper .left p{
+  font-size: 12px;
+}
+
+.wrapper .right{
+  width: 65%;
+  background: #fff;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wrapper .right .info,
+.wrapper .right .projects{
+  margin-bottom: 25px;
+}
+
+.wrapper .right .info h3,
+.wrapper .right .projects h3{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapper .right .info_data,
+.wrapper .right .projects_data{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .right .info_data .data,
+.wrapper .right .projects_data .data{
+  width: 45%;
+}
+
+.wrapper .right .info_data .data h4,
+.wrapper .right .projects_data .data h4{
+    color: #353c4e;
+    margin-bottom: 5px;
+}
+
+.wrapper .right .info_data .data p,
+.wrapper .right .projects_data .data p{
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #919aa3;
+}
+
+/* --------------------------- NAVIGATION BAR --------------------------- */
+
+tr.headerbar {
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 18px 0px #624c357a;
+    z-index: 0;
+}
+.headerbar th div {
+    position: relative;
+    float: left;
+    padding: 0.5em 2em;
+}
+.headerbar th nav P {
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    margin-top: 2.6em;
+    width: 100%;
+}
+.headerbar nav ul {
+    margin: 0px;
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: stretch;
+    list-style-type: none;
+}
+.headerbar nav ul li {
+    text-align: center;
+    display: contents;
+}
+.headerbar nav ul li a {
+    height: 110px;
+    width: 10%;
+    position: relative;
+    display: block;
+    color: black;
+    border-left: 1px solid #ac9f97b5;
+    padding: 0.8em;
+    text-align: center;
+}
+.headerbar nav ul li a.active {
+  background-color: #c2b1b3;
+}
+.headerbar nav ul li a:hover {
+  background-color: #dcd5d6;
+  color: #2f343c;
+}
